@@ -14,8 +14,8 @@ import jakarta.servlet.http.HttpServletRequest;
 public class AppController {
 
     @GetMapping("/foo")
-    public ResponseEntity<?> foo(HttpServletRequest request){
-        Map<String, Object> data = new HashMap<>(); 
+    public ResponseEntity<?> foo(HttpServletRequest request) {
+        Map<String, Object> data = new HashMap<>();
         data.put("title", "Bienvenido al sistema de atencion");
         data.put("time", new Date());
         data.put("message", request.getAttribute("message"));
